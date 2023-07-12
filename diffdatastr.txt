@@ -1,0 +1,76 @@
+map <key1, map <key2, set <string> songs_set> >; 
+    key1 = album name
+    key2 = artist name
+    songs_set = set of album songs
+
+map < pair <string1,string2>, set <string3>>
+    string1 = album name
+    string2 = artist name
+    string3 = set of all songs in album
+
+map <key, value>
+    key - album name
+    value - artists, songs
+        if line doesn't start with a number, artist name
+        else
+            song names
+
+struct album_details {
+    string album_name;
+    set <string> artist_names;
+    set <string> song_names;
+};
+
+set <album_details> musiclibrary; 
+
+BEST
+struct album_details {
+    set<string> artist_names;
+    set<string> song_names;
+}
+
+map <string, album_details> musiclibrary;
+
+for search function:
+set <string> search_album; // final set for union, intersection, difference. 
+
+
+
+
+Breathe
+Change
+Forever & Always
+Hey Stephen
+Love Story
+You're Not Sorry
+SexyBack
+Anti-Hero
+Glitch
+Karma
+Maroon
+Midnight Rain
+Paris
+Question...?
+Snow on the Beach
+Sweet Nothing
+You're on Your Own Kid
+
+
+
+01 Snow on the Beach
+02 You're on Your Own Kid
+03 Question...?
+04 Sweet Nothing
+05 Maroon
+06 Anti-Hero
+07 Midnight Rain
+08 Paris
+09 Glitch
+10 Karma
+11 Breathe
+12 Change
+13 Love Story
+14 Hey Stephen
+15 You're Not Sorry
+16 Forever & Always
+17 SexyBack

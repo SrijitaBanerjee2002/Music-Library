@@ -1,0 +1,30 @@
+LOAD FUNCTION:
+    * open text file when prompted
+    * when no text file is mentioned, use musicdatabase.txt
+    * use the data structure to make music library
+
+using music library to load:
+    * open text file
+    * extract each line
+    * check if the line starts with a number or Not
+        if it does, that's a song name. insert them in the struct appropriately
+    * extract the album name and insert it in the struct appropriately
+    * extract the artists' names and insert them in the struct appropriately
+    * repeat this every time you load a text file
+
+SEARCH FUNCTION:
+    * you can search for album/artist/song. whatever it is, the program will show which ALBUM has it (ALWAYS!!!!)
+    * if no modifier is given (union of sets)
+    * + modifier: intersection
+    * - modifier: set difference
+
+STATS FUNCTION:
+    * stats : shows the number of records, total number of songs and unique artists present in the musicdatabase
+    * stats -d : prints contents of the music library
+
+CLEAR FUNCTION: 
+    * clears the music library (resets)
+
+EXPORT FUNCTION
+    * exports all contents to a separate text file.
+    * if no file name is provided, export to musicdatabase.txt
